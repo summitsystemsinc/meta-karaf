@@ -21,7 +21,6 @@ INSTALL_DIR = "${D}${RELATIVE_INSTALL_DIR}"
 RDEPENDS = "openjdk-7-jre"
 
 FILES_${PN} = "\
-	${bindir} \
 	${RELATIVE_INSTALL_DIR}/*"
 
 do_install() {
@@ -33,7 +32,6 @@ do_install() {
 
 	cd ${WORKDIR}
 	
-	install -d ${D}${bindir}
 }
 
 do_install_append() {
