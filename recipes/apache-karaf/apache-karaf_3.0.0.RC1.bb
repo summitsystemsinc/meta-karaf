@@ -18,7 +18,7 @@ RELATIVE_INSTALL_DIR = "/opt/karaf"
 INSTALL_DIR = "${D}${RELATIVE_INSTALL_DIR}"
 
 #TODO how to depend on either jre? 6/7
-RDEPENDS = "openjdk-7-jre"
+RDEPENDS_${PN} += "openjdk-7-jre"
 
 FILES_${PN} = "\
 	${RELATIVE_INSTALL_DIR}/*"
